@@ -42,6 +42,7 @@
       <classifier>hadoop2</classifier>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 
 </project>

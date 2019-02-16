@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch02-mr-intro" />
+        <module name="ch03-hdfs" />
         <module name="ch20-hbase" />
         <module name="common" />
         <module name="myhadoop" />
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="book" target="1.6" />
       <module name="ch02-mr-intro" target="1.6" />
+      <module name="ch03-hdfs" target="1.6" />
       <module name="ch20-hbase" target="1.6" />
       <module name="common" target="1.6" />
       <module name="hadoop-meta" target="1.6" />

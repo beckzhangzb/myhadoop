@@ -11,6 +11,7 @@
     <modules>
         <module>book</module>
         <module>ch02-mr-intro</module>
+        <module>ch03-hdfs</module>
         <module>hadoop-meta</module>
         <module>ch20-hbase</module>
         <module>common</module>
