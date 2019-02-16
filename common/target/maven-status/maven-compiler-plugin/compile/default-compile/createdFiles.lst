@@ -1,0 +1,10 @@
+MetOfficeRecordParser.class
+NcdcRecordParser.class
+oldapi\NcdcStationMetadataParser.class
+NcdcStationMetadataParser.class
+JobBuilder.class
+oldapi\NcdcRecordParser.class
+oldapi\JobBuilder.class
+oldapi\MetOfficeRecordParser.class
+oldapi\NcdcStationMetadata.class
+NcdcStationMetadata.class
