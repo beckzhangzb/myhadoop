@@ -47,7 +47,7 @@ public class NewExampleClient {
             byte[] columnFamily = Bytes.toBytes("data");
             byte[] qualifier = Bytes.toBytes(String.valueOf(i));
             byte[] value = Bytes.toBytes("value" + i);
-            put.add(columnFamily, qualifier, value);
+            //put.add(columnFamily, qualifier, value);
             table.put(put);
           }
           Get get = new Get(Bytes.toBytes("row1"));

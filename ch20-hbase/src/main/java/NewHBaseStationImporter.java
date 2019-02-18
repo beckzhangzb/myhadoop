@@ -36,7 +36,7 @@ public class NewHBaseStationImporter extends Configured implements Tool {
         metadata.initialize(new File(args[0]));
         Map<String, String> stationIdToNameMap = metadata.getStationIdToNameMap();
 
-        for (Map.Entry<String, String> entry : stationIdToNameMap.entrySet()) {
+/*        for (Map.Entry<String, String> entry : stationIdToNameMap.entrySet()) {
           Put put = new Put(Bytes.toBytes(entry.getKey()));
           put.add(NewHBaseStationQuery.INFO_COLUMNFAMILY,
               NewHBaseStationQuery.NAME_QUALIFIER, Bytes.toBytes(entry.getValue()));
@@ -45,7 +45,7 @@ public class NewHBaseStationImporter extends Configured implements Tool {
           put.add(NewHBaseStationQuery.INFO_COLUMNFAMILY,
               NewHBaseStationQuery.LOCATION_QUALIFIER, Bytes.toBytes("(unknown)"));
           table.put(put);
-        }
+        }*/
       } finally {
         table.close();
       }
