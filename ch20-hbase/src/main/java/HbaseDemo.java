@@ -29,7 +29,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 测试实例
+ * hbase实例
+ * hbase version: 2.0.4
+ * hadoop version: 2.7.7
  * @author zhangzb
  * @since 2019/1/29 17:03
  */
@@ -68,7 +70,7 @@ public class HbaseDemo {
         HbaseDemo hbaseDemo = new HbaseDemo();
         createSingleColumnTable("demo", "user");
         createMultiColumnTable("mtable", new String[] {"user", "address"});
-        hbaseDemo.scanDataStep1();
+        hbaseDemo.scanTableData("demo");
         hbaseDemo.close();
     }
 
@@ -98,7 +100,7 @@ public class HbaseDemo {
             System.out.println("建表完成, 开始初始化部分数据");
             insertSingle(tabName, columnFamily);
         } else {
-            System.out.println("表已存在");
+            System.out.println("表已存在！");
         }
         //关闭链接
     }
@@ -247,7 +249,6 @@ public class HbaseDemo {
                                 + Bytes.toString(cell.getQualifierArray(), cell.getQualifierOffset(),
                                 cell.getQualifierLength()) + "::" +
                                 Bytes.toString(cell.getValueArray(), cell.getValueOffset(), cell.getValueLength()));
-                System.out.println("value=>" + Bytes.toString(cell.getValueArray()));
             }
         }
     }
